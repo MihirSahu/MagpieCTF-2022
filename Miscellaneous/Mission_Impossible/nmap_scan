@@ -1,0 +1,27 @@
+[theonlyonzz@theone Mission_Impossible]$ sudo nmap -Pn -sS -A -p 45451 srv1.momandpopsflags.ca
+[sudo] password for theonlyonzz: 
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-02-26 14:31 CST
+Nmap scan report for srv1.momandpopsflags.ca (18.189.90.178)
+Host is up (0.047s latency).
+Other addresses for srv1.momandpopsflags.ca (not scanned): 18.221.141.3
+rDNS record for 18.189.90.178: ec2-18-189-90-178.us-east-2.compute.amazonaws.com
+
+PORT      STATE SERVICE VERSION
+45451/tcp open  http    nginx 1.21.1
+|_http-title: 404 Not Found
+|_http-server-header: nginx/1.21.1
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|general purpose
+Running: Actiontec embedded, Linux 2.4.X|3.X, Microsoft Windows XP|7|2012
+OS CPE: cpe:/h:actiontec:mi424wr-gen3i cpe:/o:linux:linux_kernel cpe:/o:linux:linux_kernel:2.4.37 cpe:/o:linux:linux_kernel:3.2 cpe:/o:microsoft:windows_xp::sp3 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_server_2012
+OS details: Actiontec MI424WR-GEN3I WAP, DD-WRT v24-sp2 (Linux 2.4.37), Linux 3.2, Microsoft Windows XP SP3, Microsoft Windows XP SP3 or Windows 7 or Windows Server 2012
+Network Distance: 2 hops
+
+TRACEROUTE (using port 45451/tcp)
+HOP RTT      ADDRESS
+1   0.67 ms  192.168.159.2
+2   56.06 ms ec2-18-189-90-178.us-east-2.compute.amazonaws.com (18.189.90.178)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 15.55 seconds
+

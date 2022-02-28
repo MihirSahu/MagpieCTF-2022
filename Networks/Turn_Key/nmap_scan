@@ -1,0 +1,16 @@
+[theonlyonzz@theone Turn_Key]$ sudo nmap -Pn -sS vault1.momandpopsflags.ca
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-02-26 23:44 CST
+Nmap scan report for vault1.momandpopsflags.ca (146.190.0.61)
+Host is up (3.2s latency).
+Not shown: 992 closed tcp ports (reset)
+PORT     STATE    SERVICE
+25/tcp   filtered smtp
+135/tcp  filtered msrpc
+139/tcp  filtered netbios-ssn
+445/tcp  filtered microsoft-ds
+514/tcp  filtered shell
+5555/tcp open     freeciv
+8080/tcp open     http-proxy
+9100/tcp open     jetdirect
+
+Nmap done: 1 IP address (1 host up) scanned in 203.76 seconds

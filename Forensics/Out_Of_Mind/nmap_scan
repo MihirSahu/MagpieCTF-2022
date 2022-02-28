@@ -1,0 +1,15 @@
+[theonlyonzz@theone Out_Of_Mind]$ sudo nmap -Pn -sS srv1.momandpopsflags.ca
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-02-26 14:06 CST
+Nmap scan report for srv1.momandpopsflags.ca (18.189.90.178)
+Host is up (0.045s latency).
+Other addresses for srv1.momandpopsflags.ca (not scanned): 18.221.141.3
+rDNS record for 18.189.90.178: ec2-18-189-90-178.us-east-2.compute.amazonaws.com
+Not shown: 994 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+80/tcp    open  http
+443/tcp   open  https
+5060/tcp  open  sip
+8080/tcp  open  http-proxy
+9100/tcp  open  jetdirect
+20000/tcp open  dnp
+
